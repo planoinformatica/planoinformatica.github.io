@@ -5,8 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plano Informática</title>
+    <link rel="shortcut icon" href="img/Logo plano.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_email.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Plano Informática</h1>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="profile">
+            <img src="img/Logo.jpeg" alt="Logotipo da Plano Informática" class="logo">
+            <h1>Plano Informática</h1>
+            <address>
+                <h3>Horário de atendimento:</h3>
+            </address>
+            <address>
+                <h3>08:00 as 11:30 e 13:00 as 18:00</h3>
+            </address>
+        </div>
+    </header>
+    
+    <!-- Seção principal -->
+    <main class="container">
+        <ul class="link-list">
+            <li>
+                <a href="https://planoinformatica.mysuite1.com.br/client/chat.php" class="modern-button"  >                    
+                    Suporte Tecnico
+                    <span>Chat Online</span>
+                </a>
+            </li>
+            <!--
+            <li>
+                <a href="https://planoinformatica.mysuite1.com.br/client/index.php" class="modern-button">                    
+                    Help Desk
+                    <span>Central de atendimentos</span>
+                </a>
+            </li>
+            -->
+            <li>
+                <a href="telefone.html" class="modern-button" aria-label="Telefone">                    
+                    Telefone
+                    <span>Fale conosco </span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Mapa -->
+        <div class="loading-map">Carregando mapa...</div>
+        <iframe 
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d556.386987249636!2d-42.027077204551276!3d-20.26254596188697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbb027102504ae3%3A0x96bf863fb9e47662!2sPlano%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1736169264656!5m2!1spt-BR!2sbr"
+            title="Localização no Google Maps"
+            loading="lazy"
+            onload="this.previousElementSibling.style.display='none'">
+        </iframe>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="container">
+        <p>© Todos os direitos reservados | Design por JP-Soluções</p>
+        <!--
+        <nav>
+            <a href="privacidade.html">Política de Privacidade</a> |
+            <a href="termos.html">Termos de Uso</a>
+        </nav>
+        -->
+    </footer>
+
+    <script src="js/script_email.js"></script>
 </body>
 </html>
