@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, b, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*===================================================*/
+
+body {
+    font-family: 'Mulish', sans-serif;
+    background: linear-gradient(120deg, #4a90e2, #373B44);
+    background-repeat:round;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+}
+
+.porfile{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.logo {
+    width: 60px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-shadow: rgb(0, 48, 87) 0px 1px 0px;
+}
+    
+h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-bottom: 35px;
+    /*text-shadow: rgb(0, 48, 87) 0px 1px 0px;*/
+}
+
+p{
+    margin: 10px;
+    line-height: 20px;
+    text-align: justify;
+}
+/*===========================================*/
+
+.link-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 600px;
+    width: 100%; 
+}
+
+.link-list li a{
+    display: block;
+    background: rgba(255, 255, 255, 0.250);
+    padding: 15px  30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.link-list li a span{
+    display: block;
+    margin-top: 10px;
+    /*font-family: 'Mulish', Times, serif;*/
+    color: rgb(255, 255, 255);
+    /*text-shadow: rgb(0, 0, 0) 0px 0.5px 0px;*/
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.modern-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.modern-button i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+.modern-button span {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+.modern-button:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: #d1d5db;
+}
+.footer-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.map {
+    border-radius: 5px;
+    margin: 20px auto;
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+.loading-map {
+    font-size: 1rem;
+    color: #d1d5db;
+    margin-bottom: 10px;
+}
+
+/* Search Bar */
+#search-bar {
+    padding: 10px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .modern-button {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .modern-button i {
+        margin-bottom: 10px;
+    }
+}
+
+#button {
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #4a90e2, #3f7bba); /* Azul suave */
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-shadow: 0px 1px 2px #000000;
+    -webkit-transition: all 0.19s ease;
+    -moz-transition: all 0.19s ease;
+    -o-transition: all 0.19s ease;
+    transition: all 0.19s ease;
+}
+
+#button:hover {
+    opacity: 0.9;
+    background: #3578b6; /* Tom mais escuro do azul */
+    box-shadow: 0px 1px 2px #000000;
+}
+
+
